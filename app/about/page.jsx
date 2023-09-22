@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from '../Navbar'
+import React from 'react';
+import Navbar from '../Navbar';
 import Footer from '../Footer';
 
 const page = () => {
@@ -29,9 +29,9 @@ const page = () => {
         <p className='text-xl ml-2 mt-5'>I will keep posting more important posts on my Website for all of you. Please give your support and love.</p>
         <p style={boldCenterTextStyle}>Thanks For Visiting Our Site <span style={blueTextStyle}>Have a nice day!</span></p>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default page;
