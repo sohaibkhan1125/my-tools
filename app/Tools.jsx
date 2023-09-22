@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 
+
 const tools = () => {
   return (
     <section class='w-[500px] sm:w-full lg:w-full xl:w-full mt-5 '>
