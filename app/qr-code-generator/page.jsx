@@ -4,6 +4,10 @@ import React, { useState } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Image from 'next/image';
+import Hero from '../Hero';
+import MoreTools from '../MoreTools';
+import {HelmetProvider, Helmet } from 'react-helmet-async';
+
 
 
 const Page = () => {
@@ -42,8 +46,15 @@ const Page = () => {
   };
 
   return (
+    <HelmetProvider>
     <section>
+    <Helmet>
+        <title>QR Code Generator</title>
+        <meta name="description" content="By using this tool anyone can easily generate their text or link qr code." />
+        <meta name="keywords" content="qr code generator, generate qr code, qr code maker, free qr code generator, free qr code maker" />
+      </Helmet>
       <Navbar />
+      <Hero />
       <div className='-ml-[500px] sm:ml-0 mt-[70px]'>
         <p className='font-semibold text-3xl sm:ml-[20px] whitespace-nowrap mt-5 sm:text-center'>QR Code Generator</p>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
@@ -77,8 +88,12 @@ const Page = () => {
           )}
         </div>
       </div>
+      <div className='sm:ml-[720px] sm:mt-[80px] ml-[170px] mt-[50px]'>
+        <MoreTools />
+      </div>
       <Footer />
     </section>
+    </HelmetProvider>
   );
 };
 

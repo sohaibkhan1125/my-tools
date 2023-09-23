@@ -52,12 +52,12 @@ const tools = () => {
     <div class='border-[2px] w-[440px] ml-8 sm:w-[300px] xl:w-[450px]  xl:ml-[40px] rounded-lg h-[370px] sm:h-[400px] xl:h-[350px] mt-5'>
         <div class='bg-slate-300'>
         <Image width={250}
-              height={165} class='w-[250px] ml-[80px] sm:ml-[20px] sm:rounded-lg xl:ml-[100px] sm:h-[165px]' src="https://images.inc.com/uploaded_files/image/1920x1080/getty_803789400_2000133320009280103_362124.jpg" alt="Resume Maker" />
+              height={165} class='w-[250px] ml-[80px] sm:ml-[20px] sm:rounded-lg xl:ml-[100px] sm:h-[165px]' src="https://d1t35hkz8sx2bl.cloudfront.net/api/file/dwbVVcWFRCS3sjh3nWlF?cache=true" alt="Resume Maker" />
         </div>
         <h3 class='font-semibold text-2xl sm:text-xl xl:text-2xl whitespace-nowrap ml-[130px] sm:ml-[20px] xl:ml-[125px] mt-5'>Word Counter</h3>
-        <p class='ml-2 mt-3 text-gray-600 text-center'>Craft polished resumes effortlessly with our user-friendly resume maker tool for a standout job application.</p>
+        <p class='ml-2 mt-3 text-gray-600 text-center'>Efficiently count words in text with our user-friendly online Word Counter tool.</p>
        <Link href="./word-counter">
-        <button class='bg-blue-500 px-10 py-2 text-white rounded-lg ml-[160px] sm:ml-[95px] xl:ml-[160px] mt-[60px] sm:mt-4 hover:bg-blue-700'>Visit</button>
+        <button class='bg-blue-500 px-10 py-2 text-white rounded-lg ml-[160px] sm:ml-[95px] xl:ml-[160px] mt-[40px]  sm:mt-4 hover:bg-blue-700'>Visit</button>
         </Link>
     </div>
 

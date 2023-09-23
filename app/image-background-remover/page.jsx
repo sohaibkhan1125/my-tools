@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Image from 'next/image';
+import Hero from '../Hero';
+import MoreTools from '../MoreTools';
+import {HelmetProvider, Helmet } from 'react-helmet-async';
 
 
 const Page = () => {
@@ -52,8 +55,15 @@ const Page = () => {
   };
 
   return (
+    <HelmetProvider>
     <section>
+    <Helmet>
+        <title>Image Background Remover</title>
+        <meta name="description" content="By using this tool anyone can easily remove their images background free." />
+        <meta name="keywords" content="image background remover, background remover, image background changer, image backgrounder, bg remover, free image background remover" />
+      </Helmet>
       <Navbar />
+      <Hero />
       <p className='font-semibold text-3xl text-center mt-5 ml-[40px]'>Image Background Remover</p>
       <div class="-ml-[150px] sm:ml-[400px] mt-8">
         <div class="ml-[200px]">
@@ -70,8 +80,12 @@ const Page = () => {
         <Image  width={250}
               height={165} className='rounded-lg ml-[180px] w-[450px] sm:ml-[230px] mt-10 sm:w-[450px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02HrFZuXLBvLA0Xjk-fvoUwkONkJi3OZIKw&usqp=CAU" alt="" />
       </div>
+      <div className='sm:ml-[780px] ml-[170px] mt-[50px] sm:mt-[80px]'>
+     <MoreTools />
+     </div>
       <Footer  />
     </section>
+    </HelmetProvider>
   );
 }
 

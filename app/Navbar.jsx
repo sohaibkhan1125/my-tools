@@ -29,11 +29,7 @@ const Navbar = () => {
   </ul>
 </div>
 
-<div className='w-[25%] sm:w-full mt-3 px-[70px] hidden md:block sm:px-[400px]'>
-  <Link href="/contact">
- <button className='bg-black text-white rounded-md px-4 py-1'>Contact</button>
- </Link>
-</div>
+
 
 </header>
   )

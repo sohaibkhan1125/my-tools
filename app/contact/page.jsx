@@ -1,12 +1,21 @@
+'use client';
 import React from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Image from 'next/image';
+import {HelmetProvider, Helmet } from 'react-helmet-async';
+
 
 
 const Page = () => {
   return (
+    <HelmetProvider>
     <div>
+    <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="You can easily contact with us by our email address." />
+        <meta name="keywords" content="contact, contact us, contact page, latest tools contact page," />
+      </Helmet>
       <Navbar />
       <div className='mt-5 w-full sm:ml-0 ml-[80px]'>
         <h1 className='font-semibold text-2xl text-center'>Contact Us !</h1>
@@ -33,6 +42,7 @@ const Page = () => {
       </div>
       <Footer />
     </div>
+    </HelmetProvider>
   );
 }
 

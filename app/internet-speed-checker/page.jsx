@@ -1,6 +1,11 @@
+'use client';
 import React from 'react';
 import Navbar from  '../Navbar';
 import Footer from '../Footer';
+import Hero from '../Hero';
+import MoreTools from '../MoreTools';
+import {HelmetProvider, Helmet } from 'react-helmet-async';
+
 
 const Page = () => {
   const containerStyle = {
@@ -24,8 +29,15 @@ const Page = () => {
   };
 
   return (
+    <HelmetProvider>
+        <Helmet>
+        <title>Internet Speed Checker</title>
+        <meta name="description" content="This is a best internet speed checker tool. You can easily test your current internet speed." />
+        <meta name="keywords" content="internet speed checker, internet speed tester, internet speed, net speed checker" />
+      </Helmet>
     <section>
         <Navbar  />
+        <Hero />
     <div className='mt-8 sm:ml-0 ml-[150px]'>
       <div style={containerStyle}>
         <div style={iframeContainerStyle}>
@@ -35,8 +47,12 @@ const Page = () => {
         </div>
       </div>
     </div>
+    <div className='sm:ml-[720px] sm:mt-[80px] ml-[170px] mt-[50px]'>
+      <MoreTools />
+    </div>
     <Footer />
     </section>
+    </HelmetProvider>
   );
 }
 

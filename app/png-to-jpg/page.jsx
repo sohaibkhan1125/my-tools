@@ -3,6 +3,10 @@ import React, { useEffect } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import Image from 'next/image';
+import Hero from '../Hero';
+import MoreTools from '../MoreTools';
+import {HelmetProvider, Helmet } from 'react-helmet-async';
+
 
 
 const Page = () => {
@@ -49,9 +53,16 @@ const Page = () => {
     });
   }, []); 
   return (
+    <HelmetProvider>
     <section>
+    <Helmet>
+        <title>PNG to JPG</title>
+        <meta name="description" content="By using this tool anyone can easily convert their png image into jpg." />
+        <meta name="keywords" content="png to jpg, png to jpg converter, convert png to jpg" />
+      </Helmet>
       <Navbar />
-      <div className='text-center flex flex-col sm:mt-[90px]'>
+      <Hero />
+      <div className='text-center flex flex-col sm:ml-0 ml-[120px] whitespace-nowrap mt-5 sm:mt-[90px]'>
         <h1 className='font-semibold text-2xl'>PNG to JPEG Converter</h1>
         <input type="file" id="imageInput" accept="image/png" className='sm:ml-[650px] mt-5' />
 
@@ -65,9 +76,12 @@ const Page = () => {
 
 
       </div>
-
+      <div className='sm:ml-[680px] sm:mt-[80px] ml-[150px] mt-[50px] '>
+        <MoreTools />
+      </div>
       <Footer />
     </section>
+    </HelmetProvider>
   )
 }
 

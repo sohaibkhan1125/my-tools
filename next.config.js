@@ -17,7 +17,7 @@ const nextConfig = {
   images: {
     domains: [ 's3-us-west-2.amazonaws.com', // Add your previous domain
     'www.tycoonstory.com',
-    'images.inc.com',
+    'd1t35hkz8sx2bl.cloudfront.net',
     'helpdeskgeek.com',
     'blogassets.airtel.in',
     'www.pdfmate.com',

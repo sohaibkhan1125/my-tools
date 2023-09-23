@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import Hero from '../Hero';
+import MoreTools from '../MoreTools';
+import {HelmetProvider, Helmet } from 'react-helmet-async';
 
 const Page = () => {
   const [translatedText, setTranslatedText] = useState('');
@@ -51,8 +54,16 @@ const Page = () => {
   }
 
   return (
+    <HelmetProvider>
+
     <section>
+      <Helmet>
+        <title>Article Rewriter- Rewrite Your Text</title>
+        <meta name="description" content="By using this article rewriter tool, you can easily rewrite your text." />
+        <meta name="keywords" content="article rewriter, rewrite article, content rewriter, free article rewriter, best article rewriter" />
+      </Helmet>
       <Navbar />
+      <Hero />
       <div className='sm:w-full w-[500px] -ml-[250px] sm:ml-0'>
         <nav className="navigation-container mt-5 ml-[400px] sm:ml-0 whitespace-nowrap sm:text-center">
           <div className="nav-brand font-semibold text-2xl">Article Rewriter</div>
@@ -89,8 +100,13 @@ const Page = () => {
           Copy to Clipboard
         </button>
       </div>
+      <div className='sm:ml-[720px] sm:mt-[80px] ml-[170px] mt-[50px]'>
+      <MoreTools />
+      </div>
       <Footer />
     </section>
+    </HelmetProvider>
+
   )
 }
 

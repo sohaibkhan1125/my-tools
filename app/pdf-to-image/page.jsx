@@ -2,6 +2,10 @@
 import React, { useEffect } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import Hero from '../Hero';
+import MoreTools from '../MoreTools';
+import {HelmetProvider, Helmet } from 'react-helmet-async';
+
 
 const Page = () => {
   useEffect(() => {
@@ -82,8 +86,16 @@ const Page = () => {
   };
 
   return (
+    <HelmetProvider>
     <section>
+    <Helmet>
+        <title>PDF to Image</title>
+        <meta name="description" content="Best pdf to image converter tool here. Simply paste your pdf and get image." />
+        <meta name="keywords" content="pdf to image, pdf to image converter, convert pdf to image, pdf to png,pdf to jpg" />
+      </Helmet>
+     
       <Navbar />
+      <Hero />
       <div className='text-center flex flex-col sm:ml-0 ml-[100px] mt-5'>
         <h1 className="font-semibold text-2xl sm:text-3xl whitespace-nowrap sm::ml-0 -ml-3">PDF to Image Converter</h1>
         <input type="file" id="pdf-input" className='sm:ml-[650px] mt-8' />
@@ -101,8 +113,12 @@ const Page = () => {
           Download Image
         </button>
       </div>
+      <div className='sm:ml-[680px] sm:mt-[80px] ml-[170px] mt-[50px]'>
+        <MoreTools />
+      </div>
       <Footer />
     </section>
+    </HelmetProvider>
   );
 };
 
