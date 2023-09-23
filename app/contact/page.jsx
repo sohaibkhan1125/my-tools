@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import Image from 'next/image';
+
 
 const Page = () => {
   return (
@@ -13,12 +15,12 @@ const Page = () => {
         <p style={{ fontSize: '17px' }} className='text-xl text-center mt-10'>Please email us if you have any queries about the site, advertising, or anything else.</p>
 
         <div style={{ textAlign: 'center' }}>
-          <img
+          <Image
+           width={250}
+           height={165}
           className='sm:ml-[600px] mt-5'
             alt="contact-us"
-            height="87"
             src="https://lh3.googleusercontent.com/-BA7qy8h_v1g/YLVCWDNZdCI/AAAAAAAAALw/rsHNJWX0BK4P5CuB0ymG8QkJ9A9E8KchgCLcBGAsYHQ/w320-h87/email-us-1805514__480.webp"
-            width="320"
           />
           <p style={{ marginLeft: '25%' }}>
             <i className="fas fa-envelope-open-text" style={{ color: '#2c3e50', fontSize: '20px' }}></i> <b><i> <span id="W_Email"><a href="mailto:admin@latesttools.com">admin@latesttools.com</a></span></i></b><br />

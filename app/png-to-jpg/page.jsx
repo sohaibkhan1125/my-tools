@@ -2,6 +2,8 @@
 import React, { useEffect } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import Image from 'next/image';
+
 
 const Page = () => {
   useEffect(() => {
@@ -56,7 +58,8 @@ const Page = () => {
         <button id="convertButton" className='text-white bg-blue-500 hover:bg-blue-700 rounded-lg px-3 py-2 mt-10 w-[190px] sm:ml-[650px]'>Convert to JPEG</button>
 
 
-        <img id="outputImage" className='w-[800px] ml-[400px] rounded-lg mt-5' alt="Converted JPEG" style={{ display: 'none' }} />
+        <Image  width={250}
+              height={165} id="outputImage" className='w-[800px] ml-[400px] rounded-lg mt-5' alt="Converted JPEG" style={{ display: 'none' }} />
 
         <a id="downloadLink" style={{ display: 'none' }} className='text-white bg-blue-500 hover:bg-blue-700 px-3 py-2 rounded-lg w-[200px] sm:ml-[650px] mt-5'>Download JPEG</a>
 

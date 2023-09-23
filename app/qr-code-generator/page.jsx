@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import Image from 'next/image';
+
 
 const Page = () => {
   // Define the state for error visibility
@@ -65,7 +67,8 @@ const Page = () => {
         <div className="text-center" id="qr-download-section">
           {qrImageUrl && (
             <>
-              <img src={qrImageUrl} className='qr-code ml-[650px] mt-5  sm:ml-[700px]' alt='QR Code' />
+              <Image  width={250}
+              height={165} src={qrImageUrl} className='qr-code ml-[650px] mt-5  sm:ml-[700px]' alt='QR Code' />
               <p><br /></p>
               <a href={qrImageUrl} download='qrcode.png'>
                 <button id='qr-download-btn' type='button' style={{ fontSize: '12px' }} className='text-white bg-blue-500 hover:bg-blue-700 px-10 sm:px-7 py-3 font-semibold sm:py-2 rounded-lg sm:ml-0 ml-[640px]'>Download</button>

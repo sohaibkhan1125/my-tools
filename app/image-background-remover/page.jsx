@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import Image from 'next/image';
+
 
 const Page = () => {
   const [outputImageUrl, setOutputImageUrl] = useState('');
@@ -65,7 +67,8 @@ const Page = () => {
         <div class="download-container">
           <button id="download-button" onClick={handleDownloadImage} class="text-white bg-blue-500 hover:bg-blue-700 rounded-lg px-3 py-2 ml-[200px] sm:ml-[350px]">Download Image</button>
         </div>
-        <img className='rounded-lg ml-[180px] w-[450px] sm:ml-[230px] mt-10 sm:w-[450px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02HrFZuXLBvLA0Xjk-fvoUwkONkJi3OZIKw&usqp=CAU" alt="" />
+        <Image  width={250}
+              height={165} className='rounded-lg ml-[180px] w-[450px] sm:ml-[230px] mt-10 sm:w-[450px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT02HrFZuXLBvLA0Xjk-fvoUwkONkJi3OZIKw&usqp=CAU" alt="" />
       </div>
       <Footer  />
     </section>
