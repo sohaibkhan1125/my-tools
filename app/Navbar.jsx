@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <header className="border-[2px] max-w-[2000px] w-[500px] sm:w-full  h-[70px] flex">
+    <header className="border-[2px]  w-[500px] sm:w-full  h-[70px] flex">
 <div className="sm:w-[15%] w-full">
-  <h2 className="text-2xl font-semibold ml-[180px] sm:ml-5 mt-4 whitespace-nowrap">Latest Tools</h2>
+  <h2 className="text-2xl font-semibold ml-[130px] sm:ml-5 mt-4 whitespace-nowrap">Latest Tools</h2>
 </div>
 
 <div className="w-[60%] hidden md:block">
