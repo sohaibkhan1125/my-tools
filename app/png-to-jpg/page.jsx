@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import Hero from '../Hero';
 import { HelmetProvider, Helmet } from 'react-helmet-async';
 
 const Page = () => {
@@ -53,6 +54,7 @@ const Page = () => {
           <meta name="keywords" content="png to jpg, png to jpg converter, convert png to jpg" />
         </Helmet>
         <Navbar />
+        <Hero />
         <div className='text-center flex flex-col sm:ml-0 ml-[120px] whitespace-nowrap mt-5 sm:mt-[90px]'>
           <h1 className='font-semibold text-2xl'>PNG to JPEG Converter</h1>
           <input type="file" id="imageInput" accept="image/png" className='sm:ml-[650px] mt-5' />
