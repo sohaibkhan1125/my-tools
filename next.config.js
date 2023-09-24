@@ -26,6 +26,7 @@ const nextConfig = {
     'static.diffen.com',
     'lh3.googleusercontent.com',
     'encrypted-tbn0.gstatic.com',
+    'chart.googleapis.com',
   ],
     // Add your hostname here
     // You can add more domains if needed, e.g., ['s3-us-west-2.amazonaws.com', 'example.com']

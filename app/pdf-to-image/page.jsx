@@ -105,7 +105,7 @@ const Page = () => {
         >
           Convert to Image
         </button>
-        <div id="output" className='sm:mt-0 mt-3'></div>
+        <div id="output" className='sm:mt-0 sm:ml-[600px] rounded-lg mt-3'></div>
         <button
           id="download-button"
           className='text-white bg-blue-500 hover:bg-blue-700 px-2 py-2 rounded-lg w-[200px] sm:w-[240px] ml-[60px] sm:ml-[630px] mt-10'
