@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const tools = () => {
   return (
-    <section class='w-[500px] sm:w-full lg:w-full xl:w-full mt-5 '>
+    <section class='w-[500px]  sm:w-full lg:w-full xl:w-full mt-5 '>
     <div class='mt-3 ml-[160px]  lg:text-center'>
         <p class='font-semibold text-4xl '>Latest Tools</p>
     </div>
